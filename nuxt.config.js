@@ -18,16 +18,41 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'image/x-icon', href: 'calendar.css' },
+      {  rel:"stylesheet" , href:"https://fonts.googleapis.com/css2?family:Outfit&family:Rubik:ital,wght@1,300&display:swap"},
+      {  rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css", integrity:"sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==", crossorigin:"anonymous", referrerpolicy:"no-referrer" }
     ]
   },
+  script: [
+    {
+      src: "https://code.jquery.com/jquery-1.11.3.min.js",
+      type: "text/javascript"
+    },
+    {
+      src: "calendar.js",
+      type: "text/javascript"
+    },
+    {
+      src: "https://vjs.zencdn.net/7.10.2/video.min.js",
+      type: "text/javascript"
+    },
+
+    {
+      src: "https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js",
+      type: "text/javascript"
+    }
+  ],
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    'bootstrap/dist/css/bootstrap.css',
+    'bootstrap-vue/dist/bootstrap-vue.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~plugins/bootstrap.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
